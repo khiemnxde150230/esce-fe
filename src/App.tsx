@@ -70,7 +70,7 @@ const Revenue = lazy(() => import('~/components/user/Revenue'))
 const ReviewManager = lazy(() => import('~/components/user/ReviewManager'))
 
 // User Support component
-const Support = lazy(() => import('~/components/user/support/Support'))
+// const Support = lazy(() => import('~/components/user/support/Support'))
 
 
 function App() {
@@ -79,9 +79,9 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<LoadingSpinner />}>
           {/* Support chat widget - hiển thị trên tất cả trang user */}
-          <Suspense fallback={null}>
+          {/* <Suspense fallback={null}>
             <Support />
-          </Suspense>
+          </Suspense> */}
           
           <Routes>
             {/* ==================== USER ROUTES ==================== */}

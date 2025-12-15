@@ -5,12 +5,14 @@ import { loadEnvTyped } from './src/utils/env.utils'
 import tailwindcss from '@tailwindcss/vite'
 export default defineConfig(({ mode }) => {
   const env = loadEnvTyped(mode)
+  console.log(`Building for ${mode}`)
+  console.log('VITE_API_URL:', env.VITE_API_URL)
   return {
     base: '/',
     define: {
-      __API_URL__: JSON.stringify(env.VITE_API_URL),
-      __API_APP_PORT__: Number(env.VITE_APP_PORT),
-      __KEY_STORAGE_ACCOUNT__: JSON.stringify(env.VITE_KEY_STORAGE_ACCOUNT),
+      __API_URL__: JSON.stringify(env.VITE_API_URL || 'https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net'),
+      __API_APP_PORT__: Number(env.VITE_APP_PORT || 3000),
+      __KEY_STORAGE_ACCOUNT__: JSON.stringify(env.VITE_KEY_STORAGE_ACCOUNT || 'account'),
       __BASE_PX_SIZE__: 10
     },
     plugins: [react(), tailwindcss()],
