@@ -1,5 +1,5 @@
 // Dùng HTTPS khớp với back_end
-const backend_url = "https://localhost:7267";
+const backend_url = "https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/";
 
 export const createServiceCombo = async (serviceComboData, imageFile = null) => {
   const token = localStorage.getItem('token');

@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 import { getServiceComboById, getServicesByComboId } from '../api/ServiceComboApi';
 import Header from './Header';
 
-// Dùng HTTPS khớp với cấu hình back_end (https://localhost:7267)
-const backend_url = "https://localhost:7267";
+// Dùng HTTPS khớp với cấu hình back_end (https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/)
+const backend_url = "https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/";
 
 const ServiceComboPreview = () => {
   const location = useLocation();

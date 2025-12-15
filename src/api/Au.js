@@ -1,5 +1,5 @@
-// Dùng HTTPS đúng với cấu hình back_end (xem launchSettings.json: https://localhost:7267)
-export const backend_url = 'https://localhost:7267'
+// Dùng HTTPS đúng với cấu hình back_end (xem launchSettings.json: https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/)
+export const backend_url = 'https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/'
 
 export const login = async (userEmail, password) => {
   try {

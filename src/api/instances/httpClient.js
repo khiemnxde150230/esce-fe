@@ -1,7 +1,7 @@
 // Khớp với cấu hình trong back_end/Properties/launchSettings.json
-// Profile https:  https://localhost:7267
+// Profile https:  https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/
 // Profile http:   http://localhost:5002
-const backend_url_https = "https://localhost:7267";
+const backend_url_https = "https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/";
 const backend_url_http = "http://localhost:5002";
 
 // Kết nối trực tiếp backend

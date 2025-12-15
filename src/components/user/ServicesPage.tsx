@@ -472,7 +472,7 @@ const ServicesPage = () => {
                   <div style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#64748b' }}>
                     <p>🔍 Kiểm tra:</p>
                     <ul style={{ textAlign: 'left', display: 'inline-block', marginTop: '0.5rem' }}>
-                      <li>Backend có đang chạy tại <code>https://localhost:7267</code> không?</li>
+                      <li>Backend có đang chạy tại <code>https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/</code> không?</li>
                       <li>Kiểm tra Console để xem chi tiết lỗi</li>
                       <li>Kiểm tra Network tab trong DevTools</li>
                     </ul>

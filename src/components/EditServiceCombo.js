@@ -6,7 +6,7 @@ import Header from './Header';
 import { getCurrentUser } from '../api/SocialMediaApi';
 
 // Dùng HTTPS khớp với back_end
-const backend_url = "https://localhost:7267";
+const backend_url = "https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/";
 
 const EditServiceCombo = () => {
    // State management

@@ -83,7 +83,7 @@ const PaymentSuccessPage = () => {
     const retryDelay = 2000 // 2 giây
     
     // Fallback URL: thử gọi trực tiếp đến localhost backend nếu ngrok offline
-    const localhostBackendUrl = 'https://localhost:7267/api'
+    const localhostBackendUrl = 'https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net//api'
     
     const checkPaymentByOrderCode = async (useLocalhost = false): Promise<void> => {
       try {

@@ -698,7 +698,7 @@ const PaymentPage = () => {
       ) {
         setError(
           'Không thể kết nối đến server. Vui lòng:\n\n' +
-            '1. Kiểm tra backend có đang chạy không (https://localhost:7267)\n' +
+            '1. Kiểm tra backend có đang chạy không (https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/)\n' +
             '2. Kiểm tra kết nối mạng\n' +
             '3. Thử refresh trang và thử lại'
         )

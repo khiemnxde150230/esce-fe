@@ -3,7 +3,7 @@ import { getAuthToken } from './httpClient'
 import type { ChatMessage } from './ChatApi'
 
 const backend_url_http = 'http://localhost:5002'
-const backend_url_https = 'https://localhost:7267'
+const backend_url_https = 'https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net/'
 
 let chatConnection: signalR.HubConnection | null = null
 let connectionPromise: Promise<signalR.HubConnection> | null = null

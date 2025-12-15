@@ -5,9 +5,9 @@ const envApiUrl = import.meta.env.VITE_API_URL
 // Xác định API URL: ưu tiên biến môi trường
 // Backend có UseHttpsRedirection() nên sẽ redirect HTTP -> HTTPS, gây lỗi CORS
 // Do đó mặc định dùng HTTPS để tránh redirect
-// Nếu backend chạy HTTPS, set VITE_API_URL=https://localhost:7267/api trong file .env
+// Nếu backend chạy HTTPS, set VITE_API_URL=https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net//api trong file .env
 // Nếu backend chạy HTTP (không có redirect), set VITE_API_URL=http://localhost:5002/api trong file .env
-export const API_BASE_URL = envApiUrl || 'https://localhost:7267/api'
+export const API_BASE_URL = envApiUrl || 'https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net//api'
 
 // Log để debug (chỉ log một lần khi khởi động)
 if (import.meta.env.DEV) {
@@ -19,7 +19,7 @@ if (import.meta.env.DEV) {
     console.log('  - Backend URL:', API_BASE_URL.replace('/api', ''))
     console.log('  - ⚠️ Backend có UseHttpsRedirection() nên HTTP sẽ bị redirect -> lỗi CORS')
     console.log('  - 💡 Tạo file .env trong thư mục fe_user với nội dung:')
-    console.log('     VITE_API_URL=https://localhost:7267/api (khuyến nghị - tránh redirect)')
+    console.log('     VITE_API_URL=https://esce-api-hwhhh5behvh3gnfr.southeastasia-01.azurewebsites.net//api (khuyến nghị - tránh redirect)')
     console.log('     hoặc')
     console.log('     VITE_API_URL=http://localhost:5002/api (nếu backend không redirect)')
     ;(window as any).__API_CONFIG_LOGGED = true
