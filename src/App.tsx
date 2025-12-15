@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import { NotificationProvider } from './contexts/NotificationContext'
 import LoadingSpinner from './components/common/LoadingSpinner'
@@ -76,7 +76,6 @@ const ReviewManager = lazy(() => import('~/components/user/ReviewManager'))
 function App() {
   return (
     <NotificationProvider>
-      <BrowserRouter>
         <Suspense fallback={<LoadingSpinner />}>
           {/* Support chat widget - hiển thị trên tất cả trang user */}
           {/* <Suspense fallback={null}>
@@ -222,7 +221,6 @@ function App() {
             } />
           </Routes>
         </Suspense>
-      </BrowserRouter>
     </NotificationProvider>
   )
 }
